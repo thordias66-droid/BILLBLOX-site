@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BILLBLOX - Loja de Personagens e Servidores</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      background: radial-gradient(circle at top, #0d001a, #2a003d);
+      color: #fff;
+      font-family: 'Press Start 2P', cursive;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
+      padding: 25px;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+      animation: headerGlow 2s infinite alternate;
+    }
+
+    @keyframes headerGlow {
+      0% { text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff; }
+      50% { text-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff; }
+      100% { text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff; }
+    }
+
+    .aviso {
+      background: #ff0000;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 1em;
+      font-weight: bold;
+      animation: pisca 1s infinite alternate;
+    }
+
+    @keyframes pisca {
+      0% { background-color: #ff0000; }
+      100% { background-color: #ff9900; }
+    }
+
+    .produtos {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      padding: 40px;
+      align-items: center;
+    }
+
+    .produto {
+      display: flex;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 20px;
+      width: 700px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+      border: 2px solid #ff00ff;
+    }
+
+    .produto:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 35px #ff00ff, 0 0 50px #00ffff;
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .produto img {
+      width: 180px;
+      height: 180px;
+      border-radius: 10px;
+      margin-right: 20px;
+      object-fit: cover;
+      border: 2px solid #00ffff;
+      box-shadow: 0 0 10px #00ffff;
+    }
+
+    .produto-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .produto-info h2 {
+      color: #ffd700;
+      font-size: 1.2em;
+      text-shadow: 0 0 5px #fff, 0 0 10px #ff0;
+      margin: 0 0 10px 0;
+    }
+
+    .mutacao {
+      color: #00ffff;
+      font-style: italic;
+      text-shadow: 0 0 5px #0ff;
+    }
+
+    .preco {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #00ff88;
+      font-size: 1.1em;
+      text-shadow: 0 0 5px #0f0;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      color: #ff00ff;
+      font-size: 0.8em;
+      text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff;
+    }
+
+    .arroba {
+      color: #00ffff;
+      font-weight: bold;
+    }
+
+    @media (max-width: 800px) {
+      .produto {
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+      }
+      .produto img {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+      .produto-info {
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    🧠💥 BILLBLOX - Loja de Personagens e Servidores 💥🧠<br>
+    <span class="arroba">@BillCipherEdits</span>
+  </header>
+
+  <div class="aviso">
+    ⚠️❗ SÓ TEM UM BRAINROT DE CADA UNIDADE ❗⚠️
+  </div>
+
+  <section class="produtos">
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/180x180.png?text=Horegine" alt="Horegine Boom de Ouro">
+      <div class="produto-info">
+        <h2>Horegine Boom de Ouro</h2>
+        <p class="mutacao">Mutação: Fogo</p>
+        <p>17,1M - <span class="preco">$12</span></p>
+      </div>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/180x180.png?text=Tralaleritos" alt="Los Tralaleritos Rainbow">
+      <div class="produto-info">
+        <h2>Los Tralaleritos Rainbow</h2>
+        <p class="mutacao">Mutação: Chiclete, Caranguejo e Cucarracha</p>
+        <p>10M - <span class="preco">Promoção $5</span></p>
+      </div>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/180x180.png?text=Pot+Hotspot" alt="Pot Hotspot de Ouro">
+      <div class="produto-info">
+        <h2>Pot Hotspot de Ouro</h2>
+        <p class="mutacao">Mutação: Cucarracha e Glitch</p>
+        <p>23M - <span class="preco">$14</span></p>
+      </div>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/180x180.png?text=Pot+Hotspot+2" alt="Pot Hotspot de Ouro">
+      <div class="produto-info">
+        <h2>Pot Hotspot de Ouro</h2>
+        <p class="mutacao">Mutação: Chiclete e Cucarracha</p>
+        <p>20M - <span class="preco">$13</span></p>
+      </div>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/180x180.png?text=Nooo+Hotspotsitos" alt="Los Nooo My Hotspotsitos de Ouro">
+      <div class="produto-info">
+        <h2>Los Nooo My Hotspotsitos de Ouro</h2>
+        <p class="mutacao">Mutação: Dul Dul Dul</p>
+        <p>27,5M - <span class="preco">$16</span></p>
+      </div>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/180x180.png?text=SIX+SEVEN" alt="SIX SEVEN de Ouro">
+      <div class="produto-info">
+        <h2>SIX SEVEN de Ouro</h2>
+        <p class="mutacao">Com Tacos</p>
+        <p>24,3M - <span class="preco">$15</span></p>
+      </div>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/180x180.png?text=Los+67+Tacos" alt="Los 67 com Tacos">
+      <div class="produto-info">
+        <h2>Los 67 com Tacos</h2>
+        <p>67M - <span class="preco">$25</span></p>
+      </div>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/180x180.png?text=Los+67+Supreme" alt="Los 67 Supreme">
+      <div class="produto-info">
+        <h2>Los 67 Supreme</h2>
+        <p class="mutacao">Bubblegum, Bombardiro e Taco</p>
+        <p>202M - <span class="preco">$45</span></p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2025 BILLBLOX — Loja de Personagens e Servidores 🔥<br>
+    Siga: <span class="arroba">@BillCipherEdits</span>
+  </footer>
+
+</body>
+</html>
